@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-sharepoint-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactSharepoint/ReactSharepointWebPart.js",
+          "manifest": "./src/webparts/reactSharepoint/ReactSharepointWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactSharepointWebPartStrings": "lib/webparts/reactSharepoint/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
